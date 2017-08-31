@@ -1,0 +1,320 @@
+@charset "UTF-8";
+/* CSS Document */
+
+html, 
+html * {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: Arial,Gotham, Helvetica Neue, Helvetica, " sans-serif";
+}
+
+@font-face {
+   font-family: myFirstFont;
+   src: url(../fonts/lithospro_light.otf);
+}
+
+@font-face {
+   font-family: myFirstFont;
+   src: url(../fonts/lithospro_bold.otf);
+   font-weight: bold;
+}
+
+header {
+	padding: 20px;
+}
+
+img {
+	width: auto;
+	max-width: 100%;
+	height: auto;
+	vertical-align: middle;
+}
+
+footer {
+	padding: 20px 30px;
+	color: #FFF;
+	text-align: center;
+}
+
+body {
+	margin-left: auto;
+	margin-right: auto;
+	background-image: url(../images/ToO_background.jpg);
+	background-repeat:repeat;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+tr:hover {
+	background-color: #f5f5f5;
+	color: #30F;
+	}
+
+th {
+    border-top: 1px solid #ddd;
+	padding: 5px;
+    text-align: right;
+	font-weight: 500;
+	vertical-align:top;
+	}
+
+td {
+    border-top: 1px solid #ddd;
+	padding: 5px;
+    text-align: left;
+	font-weight: 500;
+	vertical-align: top;
+}
+
+.ingredients {
+	padding-left: 10px;
+	font-weight: 200;
+	font-style: italic;
+}
+	
+
+.style-logo {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	width: 300px;
+}
+
+.style-too {
+	text-align: center;
+	color: #FFF;
+}
+
+.style-nav ul {
+	list-style-type:none;
+	font-family: myFirstFont;
+	src: url(../fonts/lithospro_light.otf);
+}
+
+.style-nav ul li {
+	font-size: 18px;
+	text-decoration: none;
+	color: #FFF;
+	text-align: center;
+	display: block;
+	text-transform: uppercase;
+	padding: 5px 20px 5px 20px;
+}
+
+.dates ul {
+	list-style-type: none;
+}
+
+.dates ul li {
+	text-decoration: none;
+	color: #FFF;
+	text-align: center;
+	display: block;
+	text-transform: capitalize;
+	padding: 0px 10px 0px 10px;
+	font-weight: 500;
+}
+
+a:link, a:visited {
+	color: #FFF;
+	text-decoration: none;
+}
+a:hover, a:active, a:focus {
+	text-decoration: none;
+	color: #F00;
+}
+
+.hero {
+	background-image: url(../images/niko.jpg);
+	background-size: cover;
+	background-position: center;
+	padding: 20px;
+	color: #333;
+	text-align: left;
+}
+
+.about {
+	background-image: url(../images/church_interior.jpg);
+	background-size: cover;
+	padding: 20px;
+	color: #333;
+	text-align:left;
+	
+}
+
+.events {
+	background-image: url(../images/line_dancer6.jpg);
+	background-size: cover;
+	padding: 20px;
+	color: #333;
+	text-align:left;
+	
+}
+
+.menu {
+	background-image: url(../images/menu.jpg);
+	background-size: cover;
+	padding-bottom: 20px;
+	padding-left:20px;
+	padding-right: 40%;
+	padding-top: 20px;
+	color: #333;
+	text-align: left;	
+}
+
+h1 {
+	font-size: 40px;
+	text-transform: capitalize;
+	margin-bottom: 10px;
+	font-family: myFirstFont;
+	src: url(../fonts/lithospro_light.otf);
+}
+
+h2 {
+	font-size: 30px;
+	text-transform: capitalize;
+	margin-bottom: 10px;
+	font-family: myFirstFont;
+	src: url(../fonts/lithospro_light.otf);
+}
+
+h3 {
+	font-size: 24px;
+	margin-bottom: 10px;
+	font-family: myFirstFont;
+	src: url(../fonts/lithospro_light.otf);
+}
+
+h4 {
+	font-size: 16px;
+	font-weight: 300;
+	margin-bottom: 35px;
+}
+
+p {
+	font-size: 16px;
+	font-weight: 400;
+	text-shadow: #000;
+	margin-bottom: 20px;
+}
+
+.button {
+	border: 2px #FFFFFF solid;
+	padding: 8px 30px;
+	border-radius: 30px;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+.info-box-tan {
+	color: #FFFFFF;
+	padding: 30px 20px 30px;
+	text-align: center;
+}
+
+.col {
+	width: 100%;
+}
+
+.row:before, .row:after {
+	content: "";
+	display: table;
+}
+
+.row:after {
+	clear: both;
+}
+
+/*Tablet View*/
+
+@media (min-width: 768px){
+	
+	body {
+		max-width: 778px;
+	}
+	
+	.style-nav ul li {
+		display: inline-block;
+	}
+	
+	.style-nav ul {
+		text-align: center;
+	}
+	
+	.dates ul {
+		text-align: center;
+	}
+	
+	.dates ul li {
+		display: inline-block;
+	}
+	
+.hero {
+	padding-bottom: 50px;
+	padding-left:150px;
+	padding-right: 35%;
+	padding-top: 20px;
+	color: #333;
+	text-align: center;
+}
+
+.menu {
+	padding-bottom: 50px;
+	padding-left:100px;
+	padding-right: 60%;
+	padding-top: 20px;
+	color: #333;
+	text-align: center;
+}
+
+.events {
+	background-image: url(../images/line_dancer6.jpg);
+	background-size: cover;
+	padding-bottom: 20px;
+	padding-left:20px;
+	padding-right: 60%;
+	padding-top: 20px;	
+}
+	
+	h1 {
+		font-size: 40px;
+		margin-bottom: 20px;
+	}
+	
+	h2 {
+		margin-bottom: 16px;
+	}
+	
+	.col-md-one-half {
+		width: 50%;
+	}
+	
+	.col {
+		float: left;
+		padding: 0px 7px 14px;
+	}
+}
+
+/*Desktop View*/
+
+@media (min-width: 1024px){
+	
+	body {
+		max-width: 1200px;
+	}
+	
+	.style-logo {
+		float: left;
+	}
+	
+	.col-lg-one-third {
+		width: 33%;
+	}
+	
+	.col-lg-one-fourth {
+		width: 25%;
+	}
+}
